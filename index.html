@@ -72,6 +72,23 @@
 </script>
 
 <link rel="stylesheet" href="includes/css/tablesorter/style.css" type="text/css" media="print, projection, screen" />  
+
+<style type="text/css">
+div#tipDiv {
+    font-size:15px; line-height:1.2;
+    color:#000; background-color:#F0F0F6; 
+    border:1px solid #333333; padding:5px; 
+    width:225px;
+}
+
+</style>
+<script src="js/dw_tooltip_c.js" type="text/javascript"></script>
+<script type="text/javascript">
+dw_Tooltip.content_vars = {
+    L1: 'This is a link to an incomplete URL.'
+}
+
+</script>
 </head>
 <body>
  
@@ -141,8 +158,9 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 <div id="2MASS" class="reveal-modal xlarge">
 <h2>Available Service Interfaces</h2>
 <p>
-<b>General Catalog Query Engine</b> - <i>http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=2MASS</i><br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/2mass&type=cone</i><br>
+<b>General Catalog Query Engine</b> - <a href="http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=2MASS" target="_blank">Try It</a><br>
+<b>Interactive 2MASS Image Service</b> - <a href="http://irsa.ipac.caltech.edu/applications/2MASS/IM/interactive.html" target="_blank">Try It</a><br>
+<b>Simple Image Access</b> [shortName: 2MASS] - <a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/2mass&type=sia" target="_blank">Try It</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=2mass&" target="_blank" class="showTip L1">Base URL for Cutout</a><br>
 </p>
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -405,7 +423,7 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 <a href="" data-reveal-id="INTEGRAL" data-animation="none">INTEGRAL</a></td>
 <td align="center" width="8%">&gamma;-ray</td>
 <td align="center" width="8%">H</td>
-<td align="center" width="8%">J*</td>
+<td align="center" width="8%">J</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%"></td>
@@ -670,7 +688,6 @@ N: &nbsp;&nbsp;NED</p>
 <p><b>NASA Involvment:</b><br>
 P: &nbsp;&nbsp;NASA Prime<br>
 J: &nbsp;&nbsp;NASA joint<br>
-J*: &nbsp;&nbsp;NASA joint during part of mission<br>
 A: &nbsp;&nbsp;NASA funding for analysis<br>
 Blank: &nbsp;&nbsp;Limited NASA-funded involvement prior to incorporation of the data in one of the archives.  In this case, the mission name is shown in italics.</p>
 </td>
