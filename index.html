@@ -161,23 +161,34 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 <h2>Available 2MASS Service Interfaces</h2>
 
 <p><b>Table Access</b><br>
-<table>
+<table width="100%">
 <tr>
-<td width="300"><i>General Catalog Query Engine</i></td><td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=2MASS" target="_blank">Try It</a></td>
+<td width="300"><i>General Catalog Query Engine</i></td>
+<td width="80"><a href="http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=2MASS" target="_blank">Try It</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><i>Objects</i> [shortName: 2MASS-PSC]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/2MASS-PSC&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/nph-catsearch?CAT=fp_psc&" target="_blank" class="showTip L1">Base Cone URL</a></td>
+</tr>
+<td><i>Objects</i> [shortName: 2MASS-XSC]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/2MASS-XSC&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/nph-catsearch?CAT=fp_xsc&" target="_blank" class="showTip L1">Base Cone URL</a></td>
 </tr>
 </table>
 </p>
 
 <p><b>Images</b><br>
-<table>
+<table width="100%">
 <tr>
 <td width="300"><i>Interactive 2MASS Image Service</i></td>
-<td><a href="http://irsa.ipac.caltech.edu/applications/2MASS/IM/interactive.html" target="_blank">Try It</a></td>
+<td width="80"><a href="http://irsa.ipac.caltech.edu/applications/2MASS/IM/interactive.html" target="_blank">Try It</a></td>
 <td>&nbsp;</td>
 </tr>
 <tr>
 <td><i>Objects</i> [shortName: 2mass]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/2mass&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/2mass&type=sia" target="_blank" class="showTip L3">Try It</a></td>
 <td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=2mass&" target="_blank" class="showTip L1">Base Cutout URL</a></td>
 </tr>
 </table>
@@ -200,12 +211,39 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 <tr>
 <td>
 <div id="ASCA" class="reveal-modal xlarge">
-<h2>Available Service Interfaces</h2>
-<p>
-<b>Observations</b> [shortName: ascamaster] - <a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/ascamaster&type=cone" target="_blank" class="showTip L2">Try It</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=ascamaster&" target="_blank" class="showTip L1">Base Cone URL</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap" target="_blank" class="showTip L1">TAP</a><br>
-<b>Objects</b> [shortName: ascagis] - <a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/ascagis&type=cone" target="_blank" class="showTip L2">Try It</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=ascagis&" target="_blank" class="showTip L1">Base Cone URL</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap" target="_blank" class="showTip L1">TAP</a><br>
-<b>Objects</b> [shortName: ascasis] - <a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/ascasis&type=cone" target="_blank" class="showTip L2">Try It</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=ascasis&" target="_blank" class="showTip L1">Base Cone URL</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap" target="_blank" class="showTip L1">TAP</a><br>
-<b>Science Tables</b> - 3<br>
+<h2>Available ASCA Service Interfaces</h2>
+
+<p><b>Table Access</b><br>
+<table width="100%">
+
+<tr>
+<td width="300"><i>Observations</i> [shortName: ascamaster]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/ascamaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=ascamaster&" target="_blank" class="showTip L1">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+ascamaster" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Objects</i> [shortName: ascagis]</td>
+<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/ascagis&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=ascagis&" target="_blank" class="showTip L1">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+ascagis" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Objects</i> [shortName: ascasis]</td>
+<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/ascasis&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=ascasis&" target="_blank" class="showTip L1">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+ascasis" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Science Tables</i></td>
+<td>3</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
 </p>
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -226,9 +264,15 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 <tr>
 <td>
 <div id="ADS" class="reveal-modal xlarge">
-<h2>Available Service Interfaces</h2>
-<p>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ads.harvard.edu/cone&type=cone</i><br>
+<h2>Available ADS Service Interfaces</h2>
+
+<p><b>Table Access</b><br>
+<table width="100%">
+<tr>
+<td width="300"><i>Science Tables</i></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ads.harvard.edu/cone&type=cone" target="_blank" class="showTip L2">Try It</a> (<i>Right click to open in a new window.</i>)</td>
+</tr>
+</table>
 </p>
 <a class="close-reveal-modal">&#215;</a>
 </div>
