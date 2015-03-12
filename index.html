@@ -49,7 +49,7 @@
 
       });
 
-      $("#ajax-append").click(function() { 
+      $(".ajax-append").click(function() { 
          $.get("allmissions.html", function(html) { 
              // append the "ajax'd" data to the table body 
              $("#resourceTable tbody").append(html); 
@@ -108,7 +108,7 @@ dw_Tooltip.content_vars = {
 <p>The final column indicates if there is a SSA services associated with the project/mission/instrument.</p>
 
 <div id="expandtableTop">
-This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> to see all missions.<br>
+This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</a> to see all missions.<br>
 </div>
 <div id="collapsetableTop">
 <a href="">Collapse</a> to see <b>Primary Missions</b> only.<br>
@@ -293,8 +293,38 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 <tr>
 <td>
 <div id="Chandra" class="reveal-modal xlarge">
-<h2>Available Service Interfaces</h2>
-<p>
+<h2>Available Chandra Service Interfaces</h2>
+
+<p><b>Table Access</b><br>
+<table>
+<tr>
+<td width="300"><i>Objects</i> [shortName: csc]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://cda.harvard.edu/csctap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+csc.master_source" target="_blank">Simple TAP Query</a></td>
+</tr>
+<tr>
+<td width="300"><i>Objects</i> [shortName: cda]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://cda.harvard.edu/cxctap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+cda" target="_blank">Simple TAP Query</a></td>
+</tr>
+</table>
+</p>
+
+<p><b>Images</b><br>
+<table>
+<tr>
+<td width="300"><i>Objects</i> [shortName: csc]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc.siap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://cda.harvard.edu/cscsiap/queryImages?" target="_blank" class="showTip L1">Base SIA URL</a></td>
+</tr>
+<tr>
+<td width="300"><i>Objects</i> [shortName: cda]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda.siap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://cda.harvard.edu/cxcsiap/queryImages?" target="_blank" class="showTip L1">Base SIA URL</a></td>
+</tr>
+</table>
+</p>
+
 <b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc.siap&type=sia</i> (Chandra Source Catalog)<br>
 <b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda.siap&type=sia</i> (CXO Data Archive)<br>
 <b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SIA&type=sia</i> (TGCat)<br>
@@ -727,6 +757,9 @@ This shows <b>Primary Missions</b> only. <a href="" id="ajax-append">Expand</a> 
 
 </table>
 
+<div id="expandtableBottom">
+This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</a> to see all missions.<br><br>
+</div>
 <div id="collapsetableBottom">
 <a href="">Collapse</a> to see <b>Primary Missions</b> only.<br><br>
 </div>
