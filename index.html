@@ -297,45 +297,72 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 
 <p><b>Table Access</b><br>
 <table>
+
 <tr>
-<td width="400"><i>Objects</i> [Chandra Source Catalog, shortName: csc]</td>
+<td width="450"><i>Observations</i> [shortName: chanmaster]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/chanmaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=chanmaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+chanmaster" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td width="450"><i>Objects</i> [Chandra Source Catalog, shortName: csc]</td>
 <td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://cda.harvard.edu/cscvo/coneSearch?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
 <td width="150"><a href="http://cda.harvard.edu/csctap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+csc.master_source" target="_blank">Simple TAP Query</a></td>
 </tr>
 <tr>
-<td width="400"><i>Objects</i> [CXO Data Archive, shortName: cda]</td>
+<td width="450"><i>Objects</i> [CXO Data Archive, shortName: cda]</td>
 <td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://cda.harvard.edu/cxcscs/coneSearch?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
 <td width="130"><a href="http://cda.harvard.edu/cxctap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+cxc.observation" target="_blank">Simple TAP Query</a></td>
 </tr>
+
+<tr>
+<td width="450"><i>Science Tables</i></td>
+<td colspan="3">More than 150 available</td>
+</tr>
+
 </table>
 </p>
 
 <p><b>Images</b><br>
 <table>
 <tr>
-<td width="400"><i>Objects</i> [Chandra Source Catalog, shortName: csc]</td>
+<td width="450"><i>Objects</i> [Chandra Source Catalog, shortName: csc]</td>
 <td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc.siap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
 <td width="130"><a href="http://cda.harvard.edu/cscsiap/queryImages?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
 </tr>
 <tr>
-<td width="400"><i>Objects</i> [CXO Data Archive, shortName: cda]</td>
+<td width="450"><i>Objects</i> [CXO Data Archive, shortName: cda]</td>
 <td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda.siap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
 <td width="130"><a href="http://cda.harvard.edu/cxcsiap/queryImages?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
 </tr>
 </table>
 </p>
 
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc.siap&type=sia</i> (Chandra Source Catalog)<br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda.siap&type=sia</i> (CXO Data Archive)<br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SIA&type=sia</i> (TGCat)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc&type=cone</i> (Chandra Source Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda&type=cone</i> (CXO Data Archive)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SCS&type=cone</i> (TGCat)<br>
-<b>Observation Search</b> - <i>http://cda.harvard.edu/chaser/</i><br>
-<b>Table Access Protocol</b> - <i>http://cda.harvard.edu/csctap/?</i> (Chandra Source Catalog)<br>
-<b>Table Access Protocol</b> - <i>http://cda.harvard.edu/cxctap?</i> (CXO Data Archive)<br>
-<b>Interactive Web Page</b> - <i>http://tgcat.mit.edu/</i> (TGCat)<br>
+<p><b>Spectra</b><br>
+<table>
+<tr>
+<td width="450"><i>Interactive Web Page</i> [Transmission Grating Catalog and Archive]</td>
+<td width="80"><a href="http://tgcat.mit.edu/" target="_blank">Try It</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="450"><i>Objects</i> [shortName: TGCat SCS]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SCS&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://tgcat.mit.edu/tgCli.php?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="450"><i>Objects</i> [shortName: TGCat SIA]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SIA&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://tgcat.mit.edu/tgSia.php?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
+</tr>
+</table>
 </p>
+
 <a class="close-reveal-modal">&#215;</a>
 </div>
 
