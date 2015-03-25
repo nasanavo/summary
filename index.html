@@ -391,21 +391,18 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/DSS&type=sia" target="_blank" class="showTip L3">Try It</a></td>
 <td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/dss&type=sia" target="_blank" class="showTip L3">Try It</a></td>
 <td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-atlas?mission=DSS&hdr_location=%5CDSSDataPath%5C&SIAP_ACTIVE=1&collection_desc=DSS&" target="_blank" class="showTip L1" onclick="return false;">Base URL</a></td>
+<td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=dss&" target="_blank" class="showTip L1" onclick="return false;">Base Cutout URL</a></td>
+</tr>
+<tr>
+<td><i>DSS Data Collection Atlas</i></td>
+<td><a href="http://irsa.ipac.caltech.edu/data/DSS/" target="_blank">Try It</a></td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
 </tr>
 </table>
 </p>
 
-<!--
-<p>
-<b>Simple Images Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://archive.stsci.edu/dss/dss2&type=sia</i> (DSS2)<br>
-<b>Simple Images Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://archive.stsci.edu/dss/dss2infrared&type=sia</i> (DSS2 - Infrared)<br>
-<b>Simple Images Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://archive.stsci.edu/dss/dss2red&type=sia</i> (DSS2 - Red)<br>
-<b>Simple Images Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://archive.stsci.edu/dss/dss2blue&type=sia</i> (DSS2 - Blue)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://mast.stsci/catalogs/gsc2&type=cone</i> (Guide Star Catalog 2)<br>
-<b>Interactive Web Page</b> - <i>http://irsa.ipac.caltech.edu/data/DSS/</i> (DSS)<br>
-<b>Interactive Web Page</b> - <i>http://skyview.gsfc.nasa.gov/current/cgi/query.pl?</i><br>
-</p>
--->
 
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -428,13 +425,29 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <div id="NED" class="reveal-modal xlarge">
 <h2>Available NED Service Interfaces</h2>
 
-<!--
-<p>
-<b>NED NASA/IPAC Extragalactic Database</b> - <i>http://ned.ipac.caltech.edu/ngi/</i><br>
-<b>Simple Images Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ned.ipac/Image&type=sia</i><br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ned.ipac/Basic_Data_Near_Position&type=cone</i><br>
+<p><a href="http://ned.ipac.caltech.edu/ngi/" target="_blank">NED NASA/IPAC Extragalactic Database</a></p>
+
+<p><b>Images</b><br>
+<table>
+<tr>
+<td width="300"><i>Simple Image Access</i></td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ned.ipac/Image&type=sia" target="_blank">Try It</a></td>
+</tr>
+<tr>
+<td width="300"><i>Simple Cone Search</i></td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ned.ipac/Basic_Data_Near_Position&type=cone" target="_blank">Try It</a></td>
+</tr>
+</table>
 </p>
--->
+
+<p><b>Spectra</b><br>
+<table>
+<tr>
+<td width="300"><i>Simple Spectral Access</i></td>
+<td width="80"><a href="http://vo.ned.ipac.caltech.edu/services/querySED?REQUEST=queryData&" target="_blank" class="showTip L1" onclick="return false;">Base URL</a></td>
+</tr>
+</table>
+</p>
 
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -457,28 +470,31 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <div id="Fermi" class="reveal-modal xlarge">
 <h2>Available Fermi Service Interfaces</h2>
 
-<!--
-<p>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilgrb&type=cone</i> (Fermi LAT First GRB Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilpsc&type=cone</i> (Fermi LAT Second Source Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermigbrst&type=cone</i> (Fermi GBM Burst Source Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermigtrig&type=cone</i> (Fermi GBM Trigger Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilasp&type=cone</i> (Fermi LAT Monitored Source List)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilbsl&type=cone</i> (Fermi LAT Bright Source List)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilac&type=cone</i> (Fermi LAT Second AGN Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermille&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT Low-Energy Events Catalog)<br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/fermi&type=sia</i> (Fermi Counts Map: Band)<br>
-<b>Interactive Web Page</b> - <i>http://skyview.gsfc.nasa.gov/cgi-bin/query.pl?</i><br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermilgrb&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT First GRB Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermilpsc&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT Second Source Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermigbrst&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi GBM Burst Source Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermigtrig&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi GBM Trigger Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermilasp&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT Monitored Source List)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermilbsl&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT Bright Source List)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermilac&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT Second AGN Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_fermille&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Fermi LAT Low-Energy Events Catalog)<br>
+<p><b>Table Access</b><br>
+<table>
+
+<tr>
+
+<td width="300"><i>Objects</i> [shortName: fermilgrb]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilgrb&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=fermilgrb&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+fermilgrb" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+</tr>
+</table>
 </p>
--->
+
+<p><b>Images</b><br>
+<table>
+
+<tr>
+<td width="300"><i>Observations</i> [shortName: fermi]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/fermi&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=fermi& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
+</tr>
+</table>
+</p>
 
 <a class="close-reveal-modal">&#215;</a>
 </div>
