@@ -52,7 +52,8 @@
       $(".ajax-append").click(function() { 
          $.get("allmissions.html", function(html) { 
              // append the "ajax'd" data to the table body 
-             $("#resourceTable tbody").append(html); 
+             //$("#resourceTable tbody").append(html); 
+             $(".tablesorter").append(html); 
             // let the plugin know that we made a update 
             $("#resourceTable").trigger("update"); 
             // set sorting column and direction, this will sort on the first and third column 
