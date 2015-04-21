@@ -617,12 +617,6 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 </table>
 
-<!--
-<p>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://opo.stsci/hst_pr_sia&type=cone</i><br>
-</p>
--->
-
 <a class="close-reveal-modal">&#215;</a>
 </div>
 
@@ -644,14 +638,24 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <div id="INTEGRAL" class="reveal-modal xlarge">
 <h2>Available INTEGRAL Service Interfaces</h2>
 
-<!--
-<p>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/intbsc&type=cone</i> (Bright Source Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/intpublic&type=cone</i> (Public Data Results Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_intbsc&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Bright Source Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_intpublic&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Public Data Results Catalog)<br>
+<p><b>Table Access</b><br>
+<table width="100%">
+
+<tr>
+<td width="300"><i>Observations</i> [shortName: intscw]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/intscw&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=intscw&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+intscw" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Objects</i> [shortName: intbsc]</td>
+<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/intbsc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=intbsc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+intbsc" target="_blank">Simple TAP Query</a></td>
+</tr>
+</table>
 </p>
--->
 
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -674,14 +678,17 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <div id="NuSTAR" class="reveal-modal xlarge">
 <h2>Available NuSTAR Service Interfaces</h2>
 
-<!--
-<p>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/numaster&type=cone</i> (Master Catalog)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/nuaftl&type=cone</i> (As-Flown Timeline)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_numaster&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Master Catalog)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_nuaftl&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (As-Flown Timeline)<br>
+<p><b>Table Access</b><br>
+<table width="100%">
+
+<tr>
+<td width="300"><i>Observations</i> [shortName: numaster]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/numaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=numaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+numaster" target="_blank">Simple TAP Query</a></td>
+</tr>
+</table>
 </p>
--->
 
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -704,6 +711,45 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <div id="Planck" class="reveal-modal xlarge">
 <h2>Available Planck Service Interfaces</h2>
 
+<p><b>Table Access</b><br>
+<table>
+
+<tr>
+<td width="300"><i>Objects</i> [shortName: pccs030ghz]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs030ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs030ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs030ghz" target="_blank">Simple TAP Query</a></td>
+</tr>
+<tr>
+<td width="300"><i>Objects</i> [shortName: pccs044ghz]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs044ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs044ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs044ghz" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+</tr>
+</table>
+</p>
+
+<p><b>Images</b><br>
+<table>
+
+<tr>
+<td width="300"><i>Cutout</i> [shortName: pccs030ghz]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs030ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs030ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td width="300"><i>Cutout</i> [shortName: pccs044ghz]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs044ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs044ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
+<td>&nbsp;</td>
+</tr>
+
+</table>
+</p>
 <!--
 <p>
 <b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/Planck/PCCS_100GHz&type=cone</i> (Planck PCCS 100GHz Catalog<br>
