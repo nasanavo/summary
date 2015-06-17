@@ -1018,19 +1018,6 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </table>
 </p>
 
-<!--
-<p>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/spitzer.level2&type=sia</i> (Spitzer Level 2 / post Basic Calibrated Data)<br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/spitzer.level1&type=sia</i> (Spitzer Level 1 / Basic Calibrated Data)<br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/Spitzer/Images/SEIP&type=sia</i> (Spitzer Enhanced Imaging Products)<br>
-<b>Simple Image Access</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/Spitzer/Images/SINGS&type=sia</i> (Spitzer Infrared Nearby Galaxy Survey)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/Spitzer/Catalog/SEIP&type=cone</i> (Spitzer Enhanced Imaging Products Source List)<br>
-<b>Simple Cone Search</b> - <i>http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/spitzmastr&type=cone</i> (Spitzer Space Telescope Observation Log)<br>
-<b>Interactive Web Page</b> - <i>http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-dd?catalog=slphotdr4</i> (Spitzer Enhanced Imaging Products Source List)<br>
-<b>Interactive Web Page</b> - <i>http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_spitzmastr&Action=More+Options&Action=Parameter+Search&ConeAdd=1</i> (Spitzer Space Telescope Observation Log)<br>
-<b>Interactive Web Page</b> - <i>http://irsa.ipac.caltech.edu/data/SPITZER/SINGS/</i> (Spitzer Infrared Nearby Galaxy Survey)<br>
-</p>
--->
 
 <a class="close-reveal-modal">&#215;</a>
 </div>
@@ -1049,7 +1036,28 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>Suzaku</td>
+<td>
+<div id="Suzaku" class="reveal-modal xlarge">
+<h2>Available Suzaku Service Interfaces</h2>
+
+<p><b>Table Access</b><br>
+<table width="100%">
+
+<tr>
+<td width="300"><i>Observations</i> [shortName: suzamaster]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/suzamaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=suzamaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+suzamaster" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+</table>
+</p>
+
+
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="Suzaku" data-animation="none">Suzaku</a></td>
 <td align="center" width="8%">X-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
