@@ -201,12 +201,80 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%">IR</td>
 <td align="center" width="8%">I</td>
 <td align="center" width="8%">P</td>
-<td align="center" width="8%">I</td>
-<td align="center" width="8%">I</td>
+
+<td align="center" width="8%">
+
+<div id="2MASS_TObs" class="reveal-modal medium">
+<p><h3>Available 2MASS Tables - Observations</h3>
+
+<table width="100%">
+<tr>
+<td width="300"><i>General Catalog Query Engine</i></td>
+<td width="80"><a href="http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-scan?mission=irsa&submit=Select&projshort=2MASS" target="_blank">Try It</a></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</p>
+
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="2MASS_TObs" data-animation="none">I</a></td>
+
+<td align="center" width="8%"><div id="2MASS_TObj" class="reveal-modal medium">
+<h3>Available 2MASS Tables - Objects</h3>
+
+<table width="100%">
+<tr>
+<td><i>Objects</i> [shortName: 2MASS-PSC]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/2MASS-PSC&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/nph-catsearch?CAT=fp_psc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+</tr>
+<td><i>Objects</i> [shortName: 2MASS-XSC]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/2MASS-XSC&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/nph-catsearch?CAT=fp_xsc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+</tr>
+</table>
+</p>
+
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="2MASS_TObj" data-animation="none">I</a></td>
 <td align="center" width="8%"></td>
-<td align="center" width="8%">I</td>
+
+<td align="center" width="8%">
+<div id="2MASS_IO" class="reveal-modal medium">
+<h3>Available 2MASS Image Services - Observation</h3>
+
+<table width="100%">
+<tr>
+<td width="300"><i>Interactive 2MASS Image Service</i></td>
+<td width="80"><a href="http://irsa.ipac.caltech.edu/applications/2MASS/IM/interactive.html" target="_blank">Try It</a></td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="2MASS_IO" data-animation="none">I</a></td>
 <td align="center" width="8%"></td>
-<td align="center" width="8%">I,H</td>
+
+<td align="center" width="8%">
+<div id="2MASS_IC" class="reveal-modal medium">
+<h3>Available 2MASS Image Services - Cutout</h3>
+
+<table width="100%">
+<tr>
+<td><i>Objects</i> [shortName: 2mass]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/2mass&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=2mass&" target="_blank" class="showTip L1" onclick="return false;">Base Cutout URL</a></td>
+</tr>
+</table>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="2MASS_IC" data-animation="none">I,H</a></td>
 <td align="center" width="8%"></td>
 </tr>
 
@@ -1121,6 +1189,21 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 </table>
 </p>
+
+<p><b>Images</b><br>
+<table>
+<tr>
+<td width="450"><i>Objects</i> [BAT All-Sky Survey, shortName: batsig]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/batsig&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=batsig&" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
+</tr>
+
+<tr>
+<td width="450"><i>SWIFTUVOT Search Form</i></td>
+<td width="80"><a href="https://archive.stsci.edu/swiftuvot/search.php" target="_blank" class="">Try It</a></td>
+</tr>
+</table>
+
 <a class="close-reveal-modal">&#215;</a>
 </div>
 
@@ -1188,7 +1271,44 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>WMAP</td>
+<td>
+<div id="WMAP" class="reveal-modal xlarge">
+<h2>Available WMAP Service Interfaces</h2>
+
+<p><b>Table Access</b><br>
+<table width="100%">
+<tr>
+<td width="300"><i>Interactive Web Page</i></td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_wmapptsrc&Action=More+Options&Action=Parameter+Search&ConeAdd=1" target="_blank">Try It</a></td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td><i>Objects</i> [shortName: WMAPPTSRC]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/wmapptsrc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/getvotable.pl?name=wmapptsrc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+wmapptsrc" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Science Tables</i></td>
+<td>2 Available</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+<p><b>Images</b><br>
+<table width="100%">
+<tr>
+<td width="300"><i>Objects</i> [shortName: WMAP]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/wmap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
+<td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=wmap&" target="_blank" class="showTip L1" onclick="return false;">Base Cutout URL</a></td>
+</tr>
+</table>
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="WMAP" data-animation="none">WMAP</td>
 <td align="center" width="8%">CMB/IR</td>
 <td align="center" width="8%">H/I</td>
 <td align="center" width="8%">P</td>
@@ -1202,7 +1322,49 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>XMM-Newton</td>
+<td>
+<div id="XMM" class="reveal-modal xlarge">
+<h2>Available XMM-Newton Service Interfaces</h2>
+
+<p><b>Table Access</b><br>
+<table width="100%">
+
+<tr>
+<td width="300"><i>Observations</i> [shortName: xmmmaster]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/xmmmaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=xmmmaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+xmmmaster" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Objects</i> [Source Catalog, shortName: axis]</td>
+<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/axis&type=cone" target="_blank" class="showTip L2">Try It</a></td>
+<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=axis&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
+<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+axis" target="_blank">Simple TAP Query</a></td>
+</tr>
+
+<tr>
+<td><i>Science Tables</i></td>
+<td>Over 80 Available</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+</p>
+
+<p><b>Images</b><br>
+<table>
+<tr>
+<td width="450"><i>Objects</i> [Optical Monitor Images, shortName: XMM-OM]</td>
+<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://mast.stsci/siap/xmm-om&type=" target="_blank" class="showTip L3">Try It</a></td>
+<td width="130"><a href="http://archive.stsci.edu/siap/search.php?id=XMM-OM&" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
+</tr>
+</table>
+
+<a class="close-reveal-modal">&#215;</a>
+</div>
+
+<a href="" data-reveal-id="XMM" data-animation="none">XMM-Newton</a></td>
 <td align="center" width="8%">X-ray, UV/Opt</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
