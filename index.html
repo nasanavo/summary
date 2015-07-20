@@ -169,7 +169,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%"><a href="" data-reveal-id="2MASS_TObj" data-animation="none">I</a></td>
 <td align="center" width="8%"></td>
 
-<td align="center" width="8%"><a href="" data-reveal-id="2MASS_IO" data-animation="none">I</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="2MASS_IObs" data-animation="none">I</a></td>
 <td align="center" width="8%"></td>
 
 <td align="center" width="8%"><a href="" data-reveal-id="2MASS_IC" data-animation="none">I,H</a></td>
@@ -181,9 +181,9 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%">X-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
-<td align="center" width="8%">H</td>
-<td align="center" width="8%">H</td>
-<td align="center" width="8%">H</td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_TObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_TObj" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_TSci" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
@@ -197,7 +197,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%">A</td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
-<td align="center" width="8%">A</td>
+<td align="center" width="8%"><a href="" data-reveal-id="ADS_TSci" data-animation="none">A</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
@@ -205,123 +205,21 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="Chandra" class="reveal-modal xlarge">
-<h2>Available Chandra Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table>
-
-<tr>
-<td width="450"><i>Observations</i> [shortName: chanmaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/chanmaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=chanmaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+chanmaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="450"><i>Objects</i> [Chandra Source Catalog, shortName: csc]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://cda.harvard.edu/cscvo/coneSearch?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://cda.harvard.edu/csctap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+csc.master_source" target="_blank">Simple TAP Query</a></td>
-</tr>
-<tr>
-<td width="450"><i>Objects</i> [CXO Data Archive, shortName: cda]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://cda.harvard.edu/cxcscs/coneSearch?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://cda.harvard.edu/cxctap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+cxc.observation" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="450"><i>Science Tables</i></td>
-<td colspan="3">More than 150 available</td>
-</tr>
-
-</table>
-</p>
-
-<p><b>Images</b><br>
-<table>
-<tr>
-<td width="450"><i>Objects</i> [Chandra Source Catalog, shortName: csc]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/csc.siap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://cda.harvard.edu/cscsiap/queryImages?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-</tr>
-<tr>
-<td width="450"><i>Objects</i> [CXO Data Archive, shortName: cda]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.harvard.edu/cda.siap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://cda.harvard.edu/cxcsiap/queryImages?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-</tr>
-</table>
-</p>
-
-<p><b>Spectra</b><br>
-<table>
-<tr>
-<td width="450"><i>Interactive Web Page</i> [Transmission Grating Catalog and Archive]</td>
-<td width="80"><a href="http://tgcat.mit.edu/" target="_blank">Try It</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td width="450"><i>Objects</i> [shortName: TGCat SCS]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SCS&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://tgcat.mit.edu/tgCli.php?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td width="450"><i>Objects</i> [shortName: TGCat SIA]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://cxc.mit/tgcat/SIA&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://tgcat.mit.edu/tgSia.php?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="Chandra" data-animation="none">Chandra</a></td>
+<td><a href="" data-reveal-id="Chandra" data-animation="none">Chandra</a></td>
 <td align="center" width="8%">X-ray</td>
 <td align="center" width="8%">C</td>
 <td align="center" width="8%">P</td>
-<td align="center" width="8%">C,H</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_TObs" data-animation="none">C,H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_TObj" data-animation="none">C</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_TSci" data-animation="none">H</a></td>
 <td align="center" width="8%">C</td>
-<td align="center" width="8%">H</td>
-<td align="center" width="8%">C</td>
-<td align="center" width="8%">C</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_IObj" data-animation="none">C</a></td>
 <td align="center" width="8%"> </td>
-<td align="center" width="8%">C</td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_S" data-animation="none">C</a></td>
 </tr>
 
 <tr>
-<td><div id="DSS" class="reveal-modal xlarge">
-<h2>Available DSS Service Interfaces</h2>
-
-<p><b>Images</b><br>
-<table width="100%">
-<tr>
-
-<td width="300"><i>Objects</i> [shortName: DSS]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/DSS&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/dss&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td><a href="http://irsa.ipac.caltech.edu/cgi-bin/Atlas/nph-atlas?mission=DSS&hdr_location=%5CDSSDataPath%5C&SIAP_ACTIVE=1&collection_desc=DSS&" target="_blank" class="showTip L1" onclick="return false;">Base URL</a></td>
-<td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=dss&" target="_blank" class="showTip L1" onclick="return false;">Base Cutout URL</a></td>
-</tr>
-<tr>
-<td><i>DSS Data Collection Atlas</i></td>
-<td><a href="http://irsa.ipac.caltech.edu/data/DSS/" target="_blank">Try It</a></td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</p>
-
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="DSS" data-animation="none">DSS</a></td>
+<td><a href="" data-reveal-id="DSS" data-animation="none">DSS</a></td>
 <td align="center" width="8%">Optical/IR</td>
 <td align="center" width="8%">M</td>
 <td align="center" width="8%">A</td>
@@ -335,38 +233,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="NED" class="reveal-modal xlarge">
-<h2>Available NED Service Interfaces</h2>
-
-<p><a href="http://ned.ipac.caltech.edu/ngi/" target="_blank">NED NASA/IPAC Extragalactic Database</a></p>
-
-<p><b>Images</b><br>
-<table>
-<tr>
-<td width="300"><i>Simple Image Access</i></td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ned.ipac/Image&type=sia" target="_blank">Try It</a></td>
-</tr>
-<tr>
-<td width="300"><i>Simple Cone Search</i></td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://ned.ipac/Basic_Data_Near_Position&type=cone" target="_blank">Try It</a></td>
-</tr>
-</table>
-</p>
-
-<p><b>Spectra</b><br>
-<table>
-<tr>
-<td width="300"><i>Simple Spectral Access</i></td>
-<td width="80"><a href="http://vo.ned.ipac.caltech.edu/services/querySED?REQUEST=queryData&" target="_blank" class="showTip L1" onclick="return false;">Base URL</a></td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="NED" data-animation="none">Extragalactic Sources</a></td>
+<td><a href="" data-reveal-id="NED" data-animation="none">Extragalactic Sources</a></td>
 <td align="center" width="8%">All</td>
 <td align="center" width="8%">N</td>
 <td align="center" width="8%">A</td>
@@ -380,41 +247,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="Fermi" class="reveal-modal xlarge">
-<h2>Available Fermi Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table>
-
-<tr>
-
-<td width="300"><i>Objects</i> [shortName: fermilgrb]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fermilgrb&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=fermilgrb&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+fermilgrb" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-</tr>
-</table>
-</p>
-
-<p><b>Images</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: fermi]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/fermi&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=fermi& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="Fermi" data-animation="none">Fermi</a></td>
+<td><a href="" data-reveal-id="Fermi" data-animation="none">Fermi</a></td>
 <td align="center" width="8%">&gamma;-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">P</td>
@@ -428,40 +261,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="FUSE" class="reveal-modal xlarge">
-<h2>Available FUSE Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table>
-<tr>
-<td width="300"><i>Observations</i> [shortName: fuse]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://archive.stsci.edu/fuse&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://archive.stsci.edu/fuse/search.php?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td width="300"><i>Observations</i> [shortName: fuselog]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/fuselog&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=fuselog&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+fuselog" target="_blank">Simple TAP Query</a></td>
-</tr>
-</table>
-</p>
-
-<p><b>Spectra</b><br>
-<table>
-<tr>
-<td width="300"><i>Objects</i> [shortName: fuse]</td>
-<td><a href="http://archive.stsci.edu/ssap/search2.php?id=FUSE&" target="_blank" class="showTip L1" onclick="return false;">Base SSA URL</a></td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="FUSE" data-animation="none">FUSE</a></td>
+<td><a href="" data-reveal-id="FUSE" data-animation="none">FUSE</a></td>
 <td align="center" width="8%">UV</td>
 <td align="center" width="8%">M</td>
 <td align="center" width="8%">P</td>
@@ -475,64 +275,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="HST" class="reveal-modal xlarge">
-<h2>Available HST Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortname: hstaec]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/hstaec&type=cone"  target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=hstaec&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+hstaec" target="_blank">Simple TAP Query</a></td>
-</tr>
-<tr>
-<td width="300"><i>Observations</i> [shortname: hstpaec]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/hstpaec&type=cone"  target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=hstpaec&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+hstpaec" target="_blank">Simple TAP Query</a></td>
-</tr>
-<tr>
-<td width="300"><i>Observations</i> [shortname: hst]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://archive.stsci.edu/hst&type=cone"  target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://archive.stsci.edu/hst/search.php?" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="" target="_blank">Simple TAP Query</a></td>
-</tr>
-<tr>
-<td width="300"><i>Objects</i> [shortname: hubbleudf]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/hubbleudf&type=cone"  target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=hubbleudf&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+hubbleudf" target="_blank">Simple TAP Query</a></td>
-</tr>
-</table>
-</p>
-
-
-<p><b>Images</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Observations</i> [shortname: HST PR Images 2008-2010]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://mast.stsci/stpr&type=sia"  target="_blank" class="showTip L3">Try It</a></td>
-<td width="150"><a href="http://archive.stsci.edu/stpr/vo_search.php?" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-</tr>
-</table>
-
-<p><b>Spectra</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Objects</i> [shortname: hst]</td>
-<td width="150"><a href="http://archive.stsci.edu/ssap/search2.php?id=HST&" target="_blank" class="showTip L1" onclick="return false;">Base Spectra URL</a></td>
-</tr>
-</table>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="HST" data-animation="none">HST</a></td>
+<td><a href="" data-reveal-id="HST" data-animation="none">HST</a></td>
 <td align="center" width="8%">IR/Optical/UV</td>
 <td align="center" width="8%">M</td>
 <td align="center" width="8%">P</td>
@@ -546,33 +289,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="INTEGRAL" class="reveal-modal xlarge">
-<h2>Available INTEGRAL Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: intscw]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/intscw&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=intscw&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+intscw" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: intbsc]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/intbsc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=intbsc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+intbsc" target="_blank">Simple TAP Query</a></td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="INTEGRAL" data-animation="none">INTEGRAL</a></td>
+<td><a href="" data-reveal-id="INTEGRAL" data-animation="none">INTEGRAL</a></td>
 <td align="center" width="8%">&gamma;-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
@@ -586,26 +303,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="NuSTAR" class="reveal-modal xlarge">
-<h2>Available NuSTAR Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: numaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/numaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=numaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+numaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="NuSTAR" data-animation="none">NuSTAR</a></td>
+<td><a href="" data-reveal-id="NuSTAR" data-animation="none">NuSTAR</a></td>
 <td align="center" width="8%">X-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">P</td>
@@ -619,152 +317,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="Planck" class="reveal-modal xlarge">
-<h2>Available Planck Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs030ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs030ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs030ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs030ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs044ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs044ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs044ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs044ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs070ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs070ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs070ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs070ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs100ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs100ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs100ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs100ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs143ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs143ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs143ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs143ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs217ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs217ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs217ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs217ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs353ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs353ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs353ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs353ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs545ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs545ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs545ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs545ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Objects</i> [shortName: pccs857ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/pccs857ghz&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=pccs857ghz&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="150"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+pccs857ghz" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-</table>
-</p>
-
-<p><b>Images</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs030ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs030ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs030ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs044ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs044ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs044ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs070ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs070ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs070ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs100ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs100ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs100ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs143ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs143ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs143ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs217ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs217ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs217ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs353ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs353ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs353ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs545ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs545ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs545ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: pccs857ghz]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/pccs857ghz&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=pccs857ghz& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="Planck" data-animation="none">Planck</a></td>
+<td><a href="" data-reveal-id="Planck" data-animation="none">Planck</a></td>
 <td align="center" width="8%">mm/IR</td>
 <td align="center" width="8%">I</td>
 <td align="center" width="8%">J</td>
@@ -778,88 +331,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="ROSAT" class="reveal-modal xlarge">
-<h2>Available ROSAT Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: rosmaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/rosmaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=rosmaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+rosmaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: rassmaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/rassmaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=rassmaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+rassmaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: rospspc]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/rospspc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=rospspc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+rospspc" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: roshri]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/roshri&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=roshri&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+roshri" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: rassbsc]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/rassbsc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=rassbsc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+rassbsc" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: rassfsc]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/rassfsc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=rassfsc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+rassfsc" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Science Tables</i></td>
-<td>73 Available</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</p>
-
-<p><b>Images</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: rospscp]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/rospscp&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=rospscp& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-<tr>
-<td width="300"><i>Cutout</i> [shortName: roshri]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/roshri&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=roshri& " target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-<td>&nbsp;</td>
-</tr>
-
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="ROSAT" data-animation="none">ROSAT</a></td>
+<td><a href="" data-reveal-id="ROSAT" data-animation="none">ROSAT</a></td>
 <td align="center" width="8%">X-ray, EUV</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
@@ -873,33 +345,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="RXTE" class="reveal-modal xlarge">
-<h2>Available RXTE Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table>
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: xtemaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/xtemaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=xtemaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+xtemaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Science Tables</i></td>
-<td>7 Available</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</p>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="RXTE" data-animation="none">RXTE</a></td>
+<td><a href="" data-reveal-id="RXTE" data-animation="none">RXTE</a></td>
 <td align="center" width="8%">X-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">P</td>
@@ -913,28 +359,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="Spitzer" class="reveal-modal xlarge">
-<h2>Available Spitzer Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: spitzmastr]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/spitzmastr&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=spitzmastr&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+spitzmastr" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-</table>
-</p>
-
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="Spitzer" data-animation="none">Spitzer</a></td>
+<td><a href="" data-reveal-id="Spitzer" data-animation="none">Spitzer</a></td>
 <td align="center" width="8%">IR</td>
 <td align="center" width="8%">I</td>
 <td align="center" width="8%">P</td>
@@ -948,28 +373,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="Suzaku" class="reveal-modal xlarge">
-<h2>Available Suzaku Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: suzamaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/suzamaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=suzamaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+suzamaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-</table>
-</p>
-
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="Suzaku" data-animation="none">Suzaku</a></td>
+<td><a href="" data-reveal-id="Suzaku" data-animation="none">Suzaku</a></td>
 <td align="center" width="8%">X-ray</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
@@ -983,75 +387,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="Swift" class="reveal-modal xlarge">
-<h2>Available Swift Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: swiftmastr]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/swiftmastr&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=swiftmastr&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+swiftmastr" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: swiftgrb]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/swiftgrb&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=swiftgrb&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+swiftgrb" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: swiftbalog]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/swiftbalog&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=swiftbalog&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+swiftbalog" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: swiftuvlog]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/swiftuvlog&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=swiftuvlog&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+swiftuvlog" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [shortName: swiftxrlog]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/swiftxrlog&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=swiftxrlog&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+swiftxrlog" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Science Tables</i></td>
-<td>8 Available</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</p>
-
-<p><b>Images</b><br>
-<table>
-<tr>
-<td width="450"><i>Objects</i> [BAT All-Sky Survey, shortName: batsig]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/batsig&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=batsig&" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-</tr>
-
-<tr>
-<td width="450"><i>SWIFTUVOT Search Form</i></td>
-<td width="80"><a href="https://archive.stsci.edu/swiftuvot/search.php" target="_blank" class="">Try It</a></td>
-</tr>
-</table>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="Swift" data-animation="none">Swift</a></td>
+<td><a href="" data-reveal-id="Swift" data-animation="none">Swift</a></td>
 <td align="center" width="8%">X,&gamma;-ray, UV/Opt</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">P</td>
@@ -1065,43 +401,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="WISE" class="reveal-modal xlarge">
-<h2>Available WISE Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-<tr>
-<td width="300"><i>Interactive Web Page</i></td>
-<td width="80"><a href="http://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-dd?catalog=wise_allsky_4band_p3as_psd" target="_blank">Try It</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td><i>Objects</i> [shortName: WISE All-Sky]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://irsa.ipac/WISE/Catalog/All-Sky/Source_Catalog&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://irsa.ipac.caltech.edu/SCS?table=wise_allsky_4band_p3as_psd&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-</tr>
-
-<tr>
-<td><i>Science Tables</i></td>
-<td>18 Available</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-
-<p><b>Images</b><br>
-<table width="100%">
-<tr>
-<td width="300"><i>Objects</i> [shortName: wise]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/wise&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=wise&" target="_blank" class="showTip L1" onclick="return false;">Base Cutout URL</a></td>
-</tr>
-</table>
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="WISE" data-animation="none">WISE</a></td>
+<td><a href="" data-reveal-id="WISE" data-animation="none">WISE</a></td>
 <td align="center" width="8%">IR</td>
 <td align="center" width="8%">I</td>
 <td align="center" width="8%">P</td>
@@ -1115,44 +415,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="WMAP" class="reveal-modal xlarge">
-<h2>Available WMAP Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-<tr>
-<td width="300"><i>Interactive Web Page</i></td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/w3query.pl?tablehead=name=heasarc_wmapptsrc&Action=More+Options&Action=Parameter+Search&ConeAdd=1" target="_blank">Try It</a></td>
-<td>&nbsp;</td>
-</tr>
-<tr>
-<td><i>Objects</i> [shortName: WMAPPTSRC]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/wmapptsrc&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/W3Browse/getvotable.pl?name=wmapptsrc&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+wmapptsrc" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Science Tables</i></td>
-<td>2 Available</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-
-<p><b>Images</b><br>
-<table width="100%">
-<tr>
-<td width="300"><i>Objects</i> [shortName: WMAP]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/skyview/wmap&type=sia" target="_blank" class="showTip L3">Try It</a></td>
-<td><a href="http://skyview.gsfc.nasa.gov/cgi-bin/vo/sia.pl?survey=wmap&" target="_blank" class="showTip L1" onclick="return false;">Base Cutout URL</a></td>
-</tr>
-</table>
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="WMAP" data-animation="none">WMAP</td>
+<td><a href="" data-reveal-id="WMAP" data-animation="none">WMAP</td>
 <td align="center" width="8%">CMB/IR</td>
 <td align="center" width="8%">H/I</td>
 <td align="center" width="8%">P</td>
@@ -1166,49 +429,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 </tr>
 
 <tr>
-<td>
-<div id="XMM" class="reveal-modal xlarge">
-<h2>Available XMM-Newton Service Interfaces</h2>
-
-<p><b>Table Access</b><br>
-<table width="100%">
-
-<tr>
-<td width="300"><i>Observations</i> [shortName: xmmmaster]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/xmmmaster&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=xmmmaster&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+xmmmaster" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Objects</i> [Source Catalog, shortName: axis]</td>
-<td><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://nasa.heasarc/axis&type=cone" target="_blank" class="showTip L2">Try It</a></td>
-<td><a href="http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=axis&" target="_blank" class="showTip L1" onclick="return false;">Base Cone URL</a></td>
-<td width="130"><a href="http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+axis" target="_blank">Simple TAP Query</a></td>
-</tr>
-
-<tr>
-<td><i>Science Tables</i></td>
-<td>Over 80 Available</td>
-<td>&nbsp;</td>
-<td>&nbsp;</td>
-</tr>
-</table>
-</p>
-
-<p><b>Images</b><br>
-<table>
-<tr>
-<td width="450"><i>Objects</i> [Optical Monitor Images, shortName: XMM-OM]</td>
-<td width="80"><a href="http://heasarc.gsfc.nasa.gov/vo/squery/?IVOID=ivo://mast.stsci/siap/xmm-om&type=" target="_blank" class="showTip L3">Try It</a></td>
-<td width="130"><a href="http://archive.stsci.edu/siap/search.php?id=XMM-OM&" target="_blank" class="showTip L1" onclick="return false;">Base SIA URL</a></td>
-</tr>
-</table>
-
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<a href="" data-reveal-id="XMM" data-animation="none">XMM-Newton</a></td>
+<td><a href="" data-reveal-id="XMM" data-animation="none">XMM-Newton</a></td>
 <td align="center" width="8%">X-ray, UV/Opt</td>
 <td align="center" width="8%">H</td>
 <td align="center" width="8%">J</td>
