@@ -103,11 +103,11 @@ dw_Tooltip.content_vars = {
 
 <h1 align="center">NASA Astronomical Virtual Observatories</h1>
 
-<p> This is created as part of the NASA Virtual Observatories (NAVO) project to provide a common VO experience shared in all archives. The first column gives the name of the mission/project.  The second column gives to spectral regime or regimes associated with the mission data.  The primary archive indicates the NASA archive primarily responsible for the mission.  In a few cases there are multiple primar archives when different archives have primary responsibility for different aspects of the mission.</p>
+<p> This is created as part of the NASA Virtual Observatories (NAVO) project to provide a common VO experience shared in all archives. The first column gives the name of the mission/project.  The second column gives to spectral regime or regimes associated with the mission data.  The primary archive indicates the NASA archive primarily responsible for the mission.  In a few cases there are multiple primary archives when different archives have primary responsibility for different aspects of the mission.</p>
 
 <p>The next three columns describe the table data products that are available in three categories: <i>Obs</i> indicates an observation table describing observations taken by the instrument or mission, <i>Obj</i> indicates that there is a table of the objects seen by the mission.  This is restricted to tables that encompass all or a significant fraction of the mission.  The <i>Science</i> column indicates that tables associated with specific papers or science results for the mission are available.  This might include detailed analysis of objects seen in specific observations, particular classes of objects, correlations with other instruments or other high level science tables.  For some missions, e.g., ROSAT, Chandra and XMM there are dozens of these tables available.  </p>
 
-<p>The next three columns indicate the existence of image services (using the SIA protocol) at the institutions.  Three kinds of image services are distinguished.  <i>Obs</i> services return images corresponding to complete observations.  <i>Obj</i> services return images associated with specific objects or science objectives.  <i>Cutout</i> services provide more or less arbitrary cutouts of the observational data at a user specified location and size.  In many cases these return pixel subsets of what would be seen in a full observation cutout, but in others the service may automatically mosaic and resample the base data.</p>
+<p>The next three columns indicate the existence of image services (using the SIA protocol) at the institutions.  Three kinds of image services are distinguished.  <i>Obs</i> services return images corresponding to complete observations.  <i>Obj</i> services return images associated with specific objects or science objectives.  <i>Cutout</i> services provide more or less arbitrary cutouts of the observational data at a user specified location and size.  In many cases these return pixel subsets of what would be seen in a full observation cutout, but in others the service may automatically mosaic and re-sample the base data.</p>
 
 <p>The final column indicates if there are SSA services associated with the project/mission/instrument.</p>
 
@@ -185,8 +185,8 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%"><a href="" data-reveal-id="ASCA_TObs" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="ASCA_TObj" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="ASCA_TSci" data-animation="none">H</a></td>
-<td align="center" width="8%"></td>
-<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ASCA_IObj" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
 </tr>
@@ -213,7 +213,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%"><a href="" data-reveal-id="Chandra_TObs" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="Chandra_TObj" data-animation="none">C</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="Chandra_TSci" data-animation="none">H</a></td>
-<td align="center" width="8%"> </td>
+<td align="center" width="8%"><a href="" data-reveal-id="Chandra_IObs" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="Chandra_IObj" data-animation="none">C</a></td>
 <td align="center" width="8%"> </td>
 <td align="center" width="8%"><a href="" data-reveal-id="Chandra_S" data-animation="none">C</a></td>
@@ -311,7 +311,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%"><a href="" data-reveal-id="NuSTAR_TObs" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
-<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="NuSTAR_IObs" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
@@ -339,8 +339,8 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%"><a href="" data-reveal-id="ROSAT_TObs" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="ROSAT_TObj" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="ROSAT_TSci" data-animation="none">H</a></td>
-<td align="center" width="8%"></td>
-<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_IObs" data-animation="none">H</a></td>
+<td align="center" width="8%"><a href="" data-reveal-id="ROSAT_IObj" data-animation="none">H</a></td>
 <td align="center" width="8%"><a href="" data-reveal-id="ROSAT_IC" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 </tr>
@@ -381,7 +381,7 @@ This shows <b>Primary Missions</b> only. <a href="" class="ajax-append">Expand</
 <td align="center" width="8%"><a href="" data-reveal-id="Suzaku_TObs" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
-<td align="center" width="8%"></td>
+<td align="center" width="8%"><a href="" data-reveal-id="Suzaku_IObs" data-animation="none">H</a></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
 <td align="center" width="8%"></td>
@@ -469,7 +469,7 @@ N: &nbsp;&nbsp;NED</p>
 <td width="60">&nbsp;</td>
 
 <td valign="top">
-<p><b>NASA Involvment:</b><br>
+<p><b>NASA Involvement:</b><br>
 P: &nbsp;&nbsp;NASA Prime<br>
 J: &nbsp;&nbsp;NASA joint<br>
 A: &nbsp;&nbsp;NASA funding for analysis<br>

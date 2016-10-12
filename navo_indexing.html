@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>NASA Astronomical Virtual Observatories</title>
+
+<!--#include virtual="includes/styles.html"-->
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script> 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="includes/css/reveal.css" type="text/css">	
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+</head>
+<body>
+ 
+<!--#include virtual="includes/wrapper_top.html"-->
+
+<div align="left"><-- <a href="navo_intro.html">Back to Introduction</a></div>
+
+<h1 align="center">4. NAVO Study of Indexing of Large Tables</h1>
+
+One of the most complex challenges facing the future of the NASA 
+archive data centers is providing rapid access to very large catalogs 
+of sources stored in databases. These catalogs nearly always 
+include the spatial positions of sources and require intelligent 
+and scalable queries to search and discover datasets. 
+The selection of indexing method is a crucial part of the design 
+of a database, yet there is not collection of benchmarks that 
+record the performance of various indexing schemes that will 
+allow database architects make informed choices of indexing schemes. 
+Such is the purpose of this study, a collaboration between IPAC and STScI.
+<p>
+Based on the results of a <a href=NAVO_Indexes_Overview_v1.1.pdf>survey of indexing methods used in astronomy by Greene et al. (2015)</a>,
+we have determined that the benchmarking will initially use the 
+Postgres database, and we will derive benchmarks that show how query 
+speed varies with  the HTM and HEALPix  indexing methods, 
+and the index bin sizes (arcsecond, arcminute, etc.) 
+and with size of search region, and how query times compare with 
+database I/O times. The study will examine performance for 
+catalogs with uniform sky coverage (2MASS) and locally dense coverage (WFPC2).
+<p>
+To date, we have developed and evaluated a C-based toolkit for adding indices 
+to a Postgres table, running cone-search and caption timing information. 
+First results to be added soon. 
+<p></p>
+
+<p>
+<table border="0" width="100%">
+<tr>
+<td align="left"><-- <a href="navo_implemented_services.html">Previous</a></td>
+<td align="right"><a href="navo_community.html">Next</a> --></td>
+</tr>
+</table>
+</p>
+
+<!--#include virtual="includes/wrapper_bottom.html"-->
+</body>
+</html>

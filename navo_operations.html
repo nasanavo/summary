@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>NASA Astronomical Virtual Observatories</title>
+
+<!--#include virtual="includes/styles.html"-->
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script> 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="includes/css/reveal.css" type="text/css">	
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+<style>
+.scrollit {
+overflow:scroll;
+width:900px;
+}
+    .headcol {
+        position:absolute;
+        width:5em;
+        left:0;
+        top:auto;
+        border-right: 0px none black;
+        border-top-width:3px; /*only relevant for first row*/
+        margin-top:-3px; /*compensate for top border*/
+    }
+    .headcol:before {content: 'Row ';}
+</style>
+
+</head>
+<body>
+ 
+<!--#include virtual="includes/wrapper_top.html"-->
+
+<div align="left"><-- <a href="navo_intro.html">Back to Introduction</a></div>
+
+<h1>6. NAVO Operations: Registry, VO Monitoring and Usage of NAVO interfaces</h1>
+
+<h2> Registry Operations </h2>
+
+<p>
+MAST operates the NAVO VO registry.  This is a database which stores information 
+about VO services published worldwide.  The registry is used by many VO-aware tools
+but can be queried manually using the <a href=http://vao.stsci.edu/directory>Directory</a>
+service.  Just enter keywords describing the data of interest.
+</p>
+
+<h2> Monitoring and Validation </h2>
+The HEASARC runs services which monitor and validate the operation
+of VO services worldwide.
+<p>
+Every site is tested on an hourly cadence and checked to make sure that
+a sensible response is received.  The goal of the monitoring activity is
+to see if the site is up, not to do a detailed quality check.  Monitoring checks
+are lightweight and done only on representative services to ensure minimal loading
+on the remote sites.  Web pages are available to look
+at the <a href=http://heasarc.gsfc.nasa.gov/vo/monitor> current
+status</a> of services or to get the average uptime for
+a <a href=http://heasarc.gsfc.nasa.gov/vo/monitor/stats.html>time range</a>.
+When services fail, NAVO personnel send messages to the responsible
+parties.
+</p>
+<p>
+Validation is a more intensive check of the conformance of services to
+VO standards.  About 3% of services are validated each day so that all
+services are validated over the course of a month.  The results of
+validation are available through the <a
+href=http://heasarc.gsfc.nasa.gov/vo/validation>validation website</a>
+which allows users to drill down to the validation status of a
+particular service, or to look at the issues with a site or protocol
+overall.
+
+<h2>Usage of VO Protocols at NASA Archives</h2>
+<p>
+Weekly statistics for the rate of VO usage are collected by all NAVO centers.  Each
+query using a VO protocol is counted shown in the figure below.
+
+<p>
+</p>
+
+<div>
+<img src="image001.png" alt="Average Daily Rate" border="0" width="900">
+</div>
+
+<p></p>
+<p> 
+By averaging over four week periods we can reduce the noise in these data
+</p>
+
+<div>
+<img src="image002.png" alt="Daily Rate of VO Data Requests" border="0">
+</div>
+
+
+
+<p>
+<table border="0" width="100%">
+<tr>
+<td align="left"><-- <a href="navo_community.html">Previous</a></td>
+<td align="right">&nbsp;</td>
+</tr>
+</table>
+</p>
+
+<!--#include virtual="includes/wrapper_bottom.html"-->
+</body>
+</html>

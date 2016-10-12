@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>NASA Astronomical Virtual Observatories</title>
+
+<!--#include virtual="includes/styles.html"-->
+
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.js"></script> 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" href="includes/css/reveal.css" type="text/css">	
+<script type="text/javascript" src="js/jquery.reveal.js"></script>
+<script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
+
+</head>
+<body>
+ 
+<!--#include virtual="includes/wrapper_top.html"-->
+
+<div align="left"><-- <a href="navo_intro.html">Back to Introduction</a></div>
+
+<h1 align="center">2. NAVO Users Guide: Using NAVO (and VO) interfaces</h1>
+
+<p> This page describes some of the ways you can use the VO interfaces
+of NASA's archives.  You may already be using them.  MAST's <a
+href=//mast.stsci.edo/portal/Mashup/Clients/Mast/Portal.html>data
+portal</a> and <a http://vao.stsci.edu/directory>directory</a> and the
+HEASARC's <a
+http://heasarc.gsfc.nasa.gov/xamin>Xamin</a> and <a http://skyview.gsfc.nasa.gov>SkyView</a>
+interfaces use VO interfaces internally to access data resources.  There
+are a myriad VO-enabled tools (<a href=//ds9.si.edu/doc/ref/vo.html>DS9</a>, <a http://www.star.bris.ac.uk/~mbd/topcat>TOPCAT</a>, <a http://aladin.u-strasbg.fr>ALADIN</a>, ...) to access data resources through
+VO interfaces.  Libraries have been written to allow easy scripting of
+VO access, e.g. in <a href=https://github.com/pyvirtobs/pyvo> Python (PyVO)</a>.  Support for the VOTable format which
+many VO interfaces return
+is now ubiquitous in astronomical packages.
+<p>
+In most cases writing software to access data through VO interfaces is straightforward. Since the protocols
+implemented at the different archives are the same, a user can switch from
+one NASA archive to another simply by changing the base URL used.
+
+<p>
+<h2> What kinds of data are available? </h2>
+The detailed holdings for each mission stored in the NAVO archives are
+given in our <a href=resources.html>resources table</a>.  Here we describe
+the general categories of data available and how you might get to them.
+What can you find?
+
+<p>
+<table border="0" cellpadding="2" cellspacing="2" align="center" width="85%">
+<tr align="center">
+<td><img border="0" src="major_datasets.jpg" alt="Selected major datasets at NASA archives" width="742"><br>
+This figure illustrates the diversity of a few of the major datasets held by NASA.</td>
+</tr>
+</table>
+</p>
+
+<p>For most missions, the mission data is divided in temporally bounded observations.
+Details vary from mission to mission, but there are typically a time range, 
+exposure, position, target, investigator, and instrument configuration 
+associated with the observation.  You can get 
+<b>Observation tables</b> which provide a summary of the mission.  These
+allow you to see if there is coverage regions and/or times of interest
+with the instrument characteristics you are interested in.  If you really
+just looking to seeing if there is spatial coverage then the simple cone search protocol
+is all you need.  Otherwise you may wish to do more sophisticated queries
+using the general table access protocol (TAP).
+</p>
+
+
+<p>
+For many missions a major data product is an object catalog (or catalogs) derived from systematic 
+analysis of the observations.  The astronomer can often use the information 
+in these catalogs without needing to reference the observations directly.  
+Such catalogs are typical in imaging missions with reasonably high resolution. 
+<b>Object tables</b> may include both observational constraints and 
+measured values.  Some missions may have multiple object catalogs 
+reflecting difference aspects of the mission.  As with the observation
+catalogs you can query these with either cone or TAP queries depending
+upon whether you need just a spatial match or have more complex search
+criteria.
+</p>
+
+<p>
+All of the archives provide interfaces that allow users to retrieve 
+<b>observation images</b>.  These are the actual images associated with specific
+observations but may only be available for higher levels of processing.
+For some missions, the basic images are not taken as discrete observations 
+but are generated in post processing.  These interfaces are are currently queryable
+using version 1 of the simple image access protocol which supports positional
+queries. Upgrades to version 2 which will support more complex criteria are scheduled
+for the coming years.
+<p>
+
+<p>
+MAST provides a spectral interface to access <b>spectral data</b> for spectrometer 
+based missions and for the HST spectrometer instruments. This uses the
+simple spectral interface document and supports queries by position,
+wavelength and several other criteria.  Spectral interfaces are planned at IRSA and NED.
+
+<p>
+MAST, IRSA, and the HEASARC provide many <b>image services for specific regions</b> 
+of the sky or associated with specific objects.  
+Certain regions of the sky have many specialized services associated with 
+them.  They typically do not provide access to the full mission dataset 
+but are often more highly processed. 
+
+<p>Other images services are direct <b>cut-out capabilities</b> where the 
+user can specify a particular region of the interest and will get 
+results of that area is in the mission coverage region. 
+IRSA provides a standard cutout service for its imaging missions.  
+MAST provides cutouts for several key datasets.  
+At the HEASARC, the SkyView service provides cutout capabilities for over 
+100 sky datasets.  NED's imaging service provides a combination of cutouts and observations associated with specific objects.</p>
+
+<p>
+Each of the resources described above is indexed in a common registry of resources
+maintained at MAST.  Users can search this <b>metadata</b> directly using the 
+<a href=http://vao.stsci.edu/directory>Directory</a> service.  This is used by
+many VO-enabled tools but users may sometimes find it useful to explore
+the detailed metadata associated with tables and other services.
+
+<h2> How Can I Use NAVO Services Directly? </h2>
+
+Most NAVO services are accessed simply by formatting a simple URL and parsing the results.
+The results are normally a VOTable which is an XML file format, which 
+is most conveniently read with an appropriate parser but is usually human readable.
+The URLs comprise a base URL which varies from center to center, and a query
+payload which varies according to the protocol.  The base URLs are given 
+in the table below.  In some cases the base URL is characterized by the
+table or mission that is to be queried.
+<p>
+For <strong>cone searches</strong> the query payload comprises the
+three keywords RA, DEC and SR giving the ICRS right ascension, ICRS declination
+and search radius, all in decimal degrees.  E.g., to query the xmmmaster HEASARC table
+using a cone search near 3c273 we substitute the table name for XXXXX in the base query below
+and use the RA and Dec of 3c273 and then pick a search radius appropriate
+for our needs.  For XMM a radius of 0.5 degrees might be sensible.  So we end
+with the URL:<br>
+<code>
+   http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=xmmmaster&RA=187.25&DEC=2.05&SR=0.5
+</code>.
+</p>
+<p>
+<strong>Simple image </strong> queries have a payload of POS and SIZE
+where POS is a string with the RA and Dec separated by a comma and
+SIZE is the size of the region in which images are requested in
+decimal degrees.  The result of this query is table describing images
+in the region. You can look at and parse the table to find the images
+you want.  One of the columns will be a URL where the image described
+in that row can be downloaded. <br>
+
+<code>
+   http://heasarc.gsfc.nasa.gov/xamin/vo/sia?table=xmmmaster&POS=187.25,2.05&SIZE=0.5
+</code>.
+ 
+</p>
+<p>
+To do a general SQL-like query in a <strong>table access</strong> service you
+can just add /sync?REQUEST=doQuery&LANG=ADQL&QUERY=xxx  where xxx is the URI-encoded
+query string where most non-alphanumeric characters are replaced by hex escapes.
+You can get a dump of the entire database schema (tables and columns available) by
+appending /tables to the base. <br>
+
+<code>
+http://heasarc.gsfc.nasa.gov/xamin/vo/tap/sync?REQUEST=doQuery&LANG=ADQL&QUERY=select+*+from+xmmmaster
+</code>.
+
+</p>
+<p>
+
+<!--[TBD payload for SSA]-->
+<p>
+<strong>Simple spectral </strong> queries have a payload of POS and SIZE
+where POS is a string with the RA and Dec separated by a comma and
+SIZE is the size of the region in which spectra are requested in
+decimal degrees. <br>
+
+<code>
+   http://archive.stsci.edu/ssap/search2.php?id=FUSE&pos=151.0,69.0&size=2.0
+</code>.
+ 
+</p>
+<p>
+These interfaces support additional constraints and query modes which
+are discussed in the detailed protocol specifications available at the
+<a href=http://ivoa.net>IVOA website</a> but this can get you started.
+
+<p>
+<div align="center">
+<table border="1" cellpadding="5" cellspacing="2"
+style="border-collapse: collapse; width:95%;">
+<caption>Table Access VO Services at NAVO Archives</caption>
+<tr>
+<th>Service</th>
+<th width="25">P</th>
+<th width="25">N</th>
+<th width="25">Limits</th>
+<th>Base URL</th>
+</tr>
+
+<tr><td>ADS</td><td>Cone</td><td align="right">1</td><td>7,8</td><td>adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&</td></tr>
+<tr><td>MAST/STScI</td><td>Cone</td><td align="right">12</td><td> </td><td>archive.stsci.edu/XXX/search.php?</td></tr>
+<tr><td>MAST/Kepler</td><td>Cone</td><td align="right">3</td><td> </td><td>archive.stsci.edu/kepler/XXX/search.php?</td></tr>
+<tr><td>MAST HST instruments</td><td>Cone</td><td align="right">9</td><td> </td><td>archive.stsci.edu/hst.php?sci_data_set_name=X*&</td></tr>
+<tr><td>??</td><td>Cone</td><td align="right">2</td><td> </td><td>archive.stsci.edu/spec_class/search[2].php?</td></tr>
+<tr><td>MAST GALEX</td><td>Cone</td><td align="right">1</td><td> </td><td>galex.stsci.edu/gxWS/ConeSearch/gxConeSearch.aspx?</td></tr>
+<tr><td>CXC Chandra</td><td>Cone</td><td align="right">2</td><td> </td><td>cda.harvard.edu/XXX/coneSearch?</td></tr>
+<tr><td>CXC Chandra</td><td>TAP</td><td align="right">1</td><td> </td><td>cda.harvard.edu/cxctap</td></tr>
+<tr><td>HEASARC Tables</td><td>Cone</td><td align="right">733</td><td>1,2</td><td>heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=XXXX&</td></tr>
+<tr><td>HEASARC Tables</td><td>TAP</td><td align="right">1</td><td>1,2,3</td><td>heasarc.gsfc.nasa.gov/xamin/vo/tap</td></tr>
+<tr><td>IRSA 2MASS</td><td>Cone</td><td align="right">2</td><td> </td><td>irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/npa-catsearch?cat=fp_XXX&</td></tr>
+<tr><td>IRSA Tables</td><td>Cone</td><td align="right">385</td><td>5,6,9</td><td>irsa.ipac.caltech.edu/SCS?table=XXXX&</td></tr>
+<tr><td>NED</td><td>Cone</td><td align="right">1</td><td> </td><td>ned.ipac.caltech.edu/cgi-bin/NEDobjsearch?search_type=Near+Position+Search&of=xml_main&</td></tr>
+<tr><th>Total</th><th> </th><th align="right">1153</th><th> </th><th> </th></tr>
+
+</table>
+</div>
+
+<p>
+Limits:
+<ol>
+<li>No limits on size of query
+<li>100,000 row limit on results
+<li>Result limit can be overridden
+<li>Services not indexed in registry
+<li>0.75 degree radius limit on query
+<li>50,000 row limit on results
+<li>Echoes input position in results
+<li>200 row limit on results
+<li>25 currently in registry
+</ol>
+</p>
+
+<h2> How can I ... </h2>
+
+Here are a few use cases that illustrate how you might use the VO facilities of NASA's
+archives.
+
+<h3> Find observations of a given position? </h2>
+[TBD]
+<h3> Find simultaneous Spitzer and HST observations? </h2>
+[TBD]
+<h3> Get high resolution IR, Optical and X-ray observations of the same target? </h2>
+[TBD]
+<p>
+<table border="0" width="100%">
+<tr>
+<td align="left"><-- <a href="vo_glossary.html">Previous</a></td>
+<td align="right"><a href="navo_implemented_services.html">Next</a> --></td>
+</tr>
+</table>
+</p>
+
+<!--#include virtual="includes/wrapper_bottom.html"-->
+</body>
+</html>
