@@ -142,6 +142,14 @@ with the URL:<br>
    http://heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=xmmmaster&RA=187.25&DEC=2.05&SR=0.5
 </code>.
 </p>
+
+<p>Another example - Retrieve basic data for Arp 220:<br>
+
+<code>
+   http://ned.ipac.caltech.edu/cgi-bin/objsearch?objname=arp+220&of=xml_main&RA=0&DEC=0&SR=0.5
+</code>.
+</p>
+
 <p>
 <strong>Simple image </strong> queries have a payload of POS and SIZE
 where POS is a string with the RA and Dec separated by a comma and
@@ -152,7 +160,7 @@ you want.  One of the columns will be a URL where the image described
 in that row can be downloaded. <br>
 
 <code>
-   http://heasarc.gsfc.nasa.gov/xamin/vo/sia?table=xmmmaster&POS=187.25,2.05&SIZE=0.5
+   http://irsa.ipac.caltech.edu/ibe/sia/twomass/allsky/allsky?POS=20,40&SIZE=0.5
 </code>.
  
 </p>
@@ -200,19 +208,19 @@ style="border-collapse: collapse; width:95%;">
 <th>Base URL</th>
 </tr>
 
-<tr><td>ADS</td><td>Cone</td><td align="right">1</td><td>7,8</td><td>adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&</td></tr>
 <tr><td>MAST/STScI</td><td>Cone</td><td align="right">12</td><td> </td><td>archive.stsci.edu/XXX/search.php?</td></tr>
 <tr><td>MAST/Kepler</td><td>Cone</td><td align="right">3</td><td> </td><td>archive.stsci.edu/kepler/XXX/search.php?</td></tr>
 <tr><td>MAST HST instruments</td><td>Cone</td><td align="right">9</td><td> </td><td>archive.stsci.edu/hst.php?sci_data_set_name=X*&</td></tr>
 <tr><td>??</td><td>Cone</td><td align="right">2</td><td> </td><td>archive.stsci.edu/spec_class/search[2].php?</td></tr>
 <tr><td>MAST GALEX</td><td>Cone</td><td align="right">1</td><td> </td><td>galex.stsci.edu/gxWS/ConeSearch/gxConeSearch.aspx?</td></tr>
-<tr><td>CXC Chandra</td><td>Cone</td><td align="right">2</td><td> </td><td>cda.harvard.edu/XXX/coneSearch?</td></tr>
-<tr><td>CXC Chandra</td><td>TAP</td><td align="right">1</td><td> </td><td>cda.harvard.edu/cxctap</td></tr>
 <tr><td>HEASARC Tables</td><td>Cone</td><td align="right">733</td><td>1,2</td><td>heasarc.gsfc.nasa.gov/cgi-bin/vo/cone/coneGet.pl?table=XXXX&</td></tr>
 <tr><td>HEASARC Tables</td><td>TAP</td><td align="right">1</td><td>1,2,3</td><td>heasarc.gsfc.nasa.gov/xamin/vo/tap</td></tr>
 <tr><td>IRSA 2MASS</td><td>Cone</td><td align="right">2</td><td> </td><td>irsa.ipac.caltech.edu/cgi-bin/Oasis/CatSearch/npa-catsearch?cat=fp_XXX&</td></tr>
 <tr><td>IRSA Tables</td><td>Cone</td><td align="right">385</td><td>5,6,9</td><td>irsa.ipac.caltech.edu/SCS?table=XXXX&</td></tr>
 <tr><td>NED</td><td>Cone</td><td align="right">1</td><td> </td><td>ned.ipac.caltech.edu/cgi-bin/NEDobjsearch?search_type=Near+Position+Search&of=xml_main&</td></tr>
+<tr><td>ADS</td><td>Cone</td><td align="right">1</td><td>7,8</td><td>adsabs.harvard.edu/cgi-bin/abs_connect?data_type=VOTABLE&</td></tr>
+<tr><td>CXC Chandra</td><td>Cone</td><td align="right">2</td><td> </td><td>cda.harvard.edu/XXX/coneSearch?</td></tr>
+<tr><td>CXC Chandra</td><td>TAP</td><td align="right">1</td><td> </td><td>cda.harvard.edu/cxctap</td></tr>
 <tr><th>Total</th><th> </th><th align="right">1153</th><th> </th><th> </th></tr>
 
 </table>
